@@ -22,6 +22,7 @@ body{
    /* --theme-color--two: #1A1E27; */
    --theme-color--two: #201C1D;
    --box-shadow: box-shadow: #959da533 0px 8px 24px;
+   --theme-font: 'Bitter', serif;
 }
 
 /* =================== Navbar code Start =================== */
@@ -114,7 +115,7 @@ body{
     color: #EEB952;
     font-size: 4rem;
     text-align: center;
-    font-family: 'Bitter', serif;
+    font-family: var(--theme-font);
 }
 /* =================== Home Hero End =================== */
 
@@ -122,7 +123,6 @@ body{
 
 /* =================== About code Start =================== */
 .about-section{
-    padding: 80px 0;
     background-color: #fff;
 }
 
@@ -134,7 +134,7 @@ body{
 .heading-zone h2{
     font-size: 2.5rem;
     font-weight: 700;
-    font-family: 'Bitter', serif;
+    font-family: var(--theme-font);
 }
 
 .heading-zone h2 span{
@@ -145,6 +145,34 @@ body{
     width: 100%;
 }
 /* =================== About code End =================== */
+
+
+/* =================== Food Category code Start =================== */
+.food-category{
+    background-color: var(--theme-color--two);
+}
+
+.food-card{
+    padding: 40px 0;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #EEB952;
+    padding: 1rem;
+    transition: .3s ease-in-out;
+    border-radius: 5px;
+}
+
+.food-card:hover{
+    border: 1px solid #fff;
+}
+
+.food-card h4{
+    color: var(--theme-color);
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+/* =================== Food Category code End =================== */
 
 
 
@@ -210,6 +238,7 @@ body{
 
 .theme-button{
     background-color: var(--theme-color);
+    border: 1px solid var(--theme-color);
     color: #201C1D;
     padding: .8rem 1.5rem;
     border-radius: 5px;
@@ -221,4 +250,8 @@ body{
     color: var(--theme-color--two);
     background-color: #fff;
     transform: translateX(-15px);
+}
+
+.section-padding{
+    padding: 80px 0 40px 0;
 }
