@@ -1,0 +1,224 @@
+/* ======================================= 
+   index
+======================================= */
+
+ /* ------- 
+    1. Navbar 
+    2.
+-------  */
+
+/* =======================================  
+   index
+======================================= */
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;500;600;700&family=The+Nautigal&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+   --theme-color: #EEB952;
+   /* --theme-color--two: #1A1E27; */
+   --theme-color--two: #201C1D;
+   --box-shadow: box-shadow: #959da533 0px 8px 24px;
+}
+
+/* =================== Navbar code Start =================== */
+
+.navbar{
+    background: transparent;
+	padding: 1rem 0;
+    transition: .7s ease-out;
+    margin-top: 3rem;
+}
+
+.shadow-custom{
+	box-shadow: #959da533 0px 8px 24px;
+}
+.nav-area{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+.navbar-brand{
+	color: #fff;
+	font-weight: 700;
+	font-size: 1.5rem;
+    display: none;
+}
+
+.navbar-brand img, .navbar-brand2 img{
+    width: 100%;
+    transition: 1s;
+}
+.navbar-nav li{
+	margin: 0 1rem;
+	transition: 1s;
+}
+
+.nav-item:last-child{
+    margin-right: 0 !important;
+}
+
+.navbar-nav li a{
+	color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar-nav li a:hover{
+    color: var(--theme-color);
+}
+
+.fixed-top{
+    transition: 1s;
+    background-color: var(--theme-color--two);
+}
+
+.fixed-top .nav-link, .fixed-top {
+    color: var(--theme-color);
+}
+
+.fixed-top .navbar{
+	padding: .8rem 0;
+    margin: 0;
+}
+
+.fixed-top .navbar-brand2 img{
+    width: 60%;
+    margin: auto;
+}
+/* =================== Navbar code End =================== */
+
+/* =================== Home Hero Start  ===================*/
+
+.hero-section {
+    background: url('/Assets/Images/HeroBanner.jpg');
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.hero.content h1{
+    color: #EEB952;
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'Bitter', serif;
+}
+/* =================== Home Hero End =================== */
+
+
+
+/* =================== About code Start =================== */
+.about-section{
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.heading-zone{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.heading-zone h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: 'Bitter', serif;
+}
+
+.heading-zone h2 span{
+    color: #EEB952;
+}
+
+.about-img img{
+    width: 100%;
+}
+/* =================== About code End =================== */
+
+
+
+/* =================== Footer Start =================== */
+.footer-area{
+    background-color: var(--theme-color--two);
+    padding: 80px 0 10px 0;
+}
+
+.hr-line{
+    color: #fff;
+}
+
+.footer-menu h4{
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.footer-menu .contact a{
+    text-decoration: none;
+    color: #EEB952;
+    font-size: 2rem;
+}
+
+.footer-menu p{
+    /* color: #7C8279; */
+    color: #c2c2c2;
+}
+
+.footer-menu img{
+    width: 60%;
+    float: right;
+}
+
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.footer-social{
+    float: right;
+}
+
+.footer-social a{
+    color: #201C1D;
+    background-color: var(--theme-color);
+    border: 1px solid var(--theme-color);
+    padding: .5rem;
+    border-radius: 5px;
+    margin: 0 .5rem;
+    transition: .3s ease-in-out;
+}
+
+.footer-social a:hover{
+    background: none;
+    color: var(--theme-color);
+}
+
+/*=================== Footer End =================== */
+
+.theme-button{
+    background-color: var(--theme-color);
+    color: #201C1D;
+    padding: .8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.theme-button:hover{
+    color: var(--theme-color--two);
+    background-color: #fff;
+    transform: translateX(-15px);
+}
