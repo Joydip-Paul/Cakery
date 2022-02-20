@@ -7,6 +7,14 @@
     2. Hero 
     3. About Us
     4. Category Card
+    5. Client Review
+    6. Gallery
+    7.
+    8.
+    9.
+    10.
+    11.
+    12. Footer
 -------  */
 
 /* =======================================  
@@ -27,7 +35,7 @@ body{
    --theme-font: 'Bitter', serif;
 }
 
-/* =================== Navbar code Start =================== */
+/* =================== 1. Navbar code Start =================== */
 
 .navbar{
     background: transparent;
@@ -44,7 +52,7 @@ body{
 	left: 0;
 	top: 0;
 	width: 100%;
-	z-index: 1;
+	z-index: 999;
 }
 .navbar-brand{
 	color: #fff;
@@ -96,7 +104,7 @@ body{
 }
 /* =================== Navbar code End =================== */
 
-/* =================== Home Hero Start  ===================*/
+/* =================== 2. Home Hero Start  ===================*/
 
 .hero-section {
     background: url("../Images/HeroBanner.jpg");
@@ -124,7 +132,7 @@ body{
 
 
 
-/* =================== About code Start =================== */
+/* =================== 3. About code Start =================== */
 .about-section{
     background-color: #fff;
 }
@@ -150,7 +158,7 @@ body{
 /* =================== About code End =================== */
 
 
-/* =================== Food Category code Start =================== */
+/* =================== 4. Food Category code Start =================== */
 .food-category{
     background-color: var(--theme-color--two);
 }
@@ -178,8 +186,145 @@ body{
 /* =================== Food Category code End =================== */
 
 
+/* =================== 5. Client Review code Start =================== */
+.client-review{
+    background-color: #F5F4F4;
+    padding: 100px 0;
+}
 
-/* =================== Footer Start =================== */
+.single-review{
+    position: relative;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-top: 2px solid var(--theme-color);
+    position: relative;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.single-review::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: #201c1d;
+    transition: .3s ease-out;
+}
+
+.single-review:hover:after{
+    height: 100%;
+}
+
+.single-review:hover .review-content, .single-review:hover .client-image h4{
+     color: #fff;
+}
+
+.single-review:hover{
+    transform: translateY(-1rem);
+    transition: .7s ease-out;
+}
+
+.client-image{
+    width: 40%;
+    z-index: 2;
+}
+
+
+.client-image h4{
+    font-size: 1rem;
+    text-transform: uppercase;
+    /* transform: translateY(-.7rem); */
+    text-align: center;
+}
+
+.client-image img{
+    width: 80%;
+    /* transform: translateY(-1.5rem); */
+    z-index: 10;
+}
+
+.review-content{
+    width: 60%;
+    z-index: 2;
+    transition: .7s ease-out;
+    margin: auto 1rem;
+}
+
+.quote{
+    font-size: 3rem;
+    color: var(--theme-color);
+}
+/* =================== Client Review code End =================== */
+
+
+/* =================== Gallery code Start =================== */
+.gallery-area{
+    padding: 80px 0;
+    background-color: #EEB952;
+}
+
+.single-gallery{
+    text-align: center;
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #201c1dd3;
+    height: 0;
+    width: 0;
+    transition: .3s;
+}
+
+.single-gallery:hover .overlay{
+    height: 100%;
+    width: 100%;
+}
+
+.gallery-img img{
+    width: 100%;
+    position: relative;
+    /* border-radius: .5rem; */
+}
+
+.gallery-img small{
+    font-size: 1.5rem;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    z-index: 1;
+    opacity: 0;
+}
+
+.single-gallery:hover .gallery-img small{
+    opacity: 1;
+}
+
+.gallery-heading small{
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.gallery-heading h2{
+    font-size: 3.5rem;
+    font-family: var(--theme-font);
+    font-weight: 700;
+}
+
+/* =================== Gallery code End =================== */
+
+
+
+/* =================== 12. Footer Start =================== */
 .footer-area{
     background-color: var(--theme-color--two);
     padding: 80px 0 10px 0;
@@ -257,4 +402,25 @@ body{
 
 .section-padding{
     padding: 80px 0 40px 0;
+}
+
+.title-left{
+    border-bottom: 2px solid #c2c2c2;
+    position: relative;
+}
+
+.title-left h2{
+    font-size: 1.2rem;
+    position: relative;
+    padding: .5rem 0;
+}
+
+.title-left::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    background-color: #EEB952;
+    width: 10%;
+    height: 2px;
 }
