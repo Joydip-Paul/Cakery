@@ -46,12 +46,11 @@
 
 .navbar-brand{
     margin-left: 1rem;
-    font-weight: 600;
-    color: #fff;
 }
-    .navbar-nav li{
-	border-bottom: 1px solid #b4b4b4;
+.navbar-nav li{
+	border-bottom: 1px solid #7C8279;
     overflow: hidden;
+    text-align: center;
 }
 }
 
